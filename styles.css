@@ -1,0 +1,99 @@
+:root {
+    --color-primario: #f35d84;
+    --color-secundario: #5d58d7;
+    --color-terciario: #aa77c3;
+    --color-hover: hsl(220, 80%, 42%);
+    --fuente-monserrat: "Monserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fuente-krona);
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    background-color: var(--color-primario);
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px; /* Aumento del padding */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Aumento del ancho */
+    max-width: 1300px; /* Limitar el ancho máximo */
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible */
+}
+
+.titulo_encriptador {
+    color: var(--color-primario);
+    font-family: var(--fuente-monserrat);
+}
+
+.text-areas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 48%; /* Incrementado para hacerlos más rectangulares */
+    height: 150px; /* Incrementado para hacerlos más rectangulares */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    color: var(--color-secundario);
+}
+
+.buttons {
+    display: flexbox;
+    justify-content: center; 
+    width: 100%; /* Hace que el contenedor de botones ocupe el ancho completo */
+    background-color: var(--color-hover);
+    padding: 11px;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+    margin-bottom: 20px; /* Espacio debajo de los botones */
+}
+
+button {
+    flex: 1; /* Permite que los botones se expandan igualmente */
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6165c2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.imagen-encriptador {
+    width: 100%;
+    max-width: 280px; /* Reducido en un 30% desde 400px */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px; /* Espacio arriba de la imagen */
+}
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    font-size: 14px;
+    color: #fff;
+    padding: 10px; /* Añadido padding para el pie de página */
+    background-color: var(--color-terciario);
+    width: 100%; /* Asegura que el pie de página cubra todo el ancho */
+}
